@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Highline House Ideas</title>
+    <meta name="description" content="About Highline House Ideas — independent editorial on interior design, architecture, and the built environment. Meet the team and read our editorial policy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base (matches your site) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf9f7;
+            --paper-warm: #f4f1ed;
+            --stone: #e8e4df;
+            --stone-dark: #ccc7c0;
+            --accent: #b5651e;
+            --accent-light: #d4a373;
+            --muted: #6b6560;
+            --white: #ffffff;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.06);
+            --radius: 2px;
+            --max-width: 1280px;
+            --content-width: 720px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.6rem; }
+        h2 { font-size: 1.9rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+        h4 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .site-header {
+            border-bottom: 1px solid var(--stone);
+            background: rgba(250, 249, 247, 0.92);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-main {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            transition: color 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 1.5px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--ink);
+            border-bottom-color: var(--accent);
+        }
+
+        .search-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--muted);
+            padding: 8px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--ink);
+        }
+
+        @media (max-width: 860px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--paper);
+                flex-direction: column;
+                padding: 24px;
+                gap: 18px;
+                border-bottom: 1px solid var(--stone);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: none;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--stone);
+            background: var(--paper-warm);
+        }
+        .search-bar.open {
+            display: block;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid var(--stone-dark);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            background: var(--white);
+            outline: none;
+        }
+        .search-bar input:focus {
+            border-color: var(--accent);
+        }
+
+        /* Page Section (About) */
+        .page-section {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .page-section h1 {
+            margin-bottom: 24px;
+            font-size: 2.6rem;
+        }
+
+        .page-section h2 {
+            margin-top: 40px;
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+
+        .page-section h2:first-of-type {
+            margin-top: 8px;
+        }
+
+        .page-section p {
+            font-size: 1.02rem;
+            line-height: 1.8;
+            color: #2d2a27;
+        }
+
+        .page-section ul {
+            margin: 0 0 20px 24px;
+            font-size: 1.02rem;
+            line-height: 1.8;
+            color: #2d2a27;
+        }
+
+        .page-section li {
+            margin-bottom: 8px;
+        }
+
+        .page-section a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+        }
+
+        .page-section a:hover {
+            color: var(--ink);
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--stone);
+            margin: 36px 0;
+        }
+
+        /* Editor card / team snippet */
+        .editor-card {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            background: var(--paper-warm);
+            border: 1px solid var(--stone);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            margin: 32px 0 16px;
+        }
+
+        .editor-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: var(--stone);
+            flex-shrink: 0;
+        }
+
+        .editor-info h4 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+
+        .editor-info p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 500px) {
+            .editor-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+            .editor-info p {
+                text-align: center;
+            }
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--ink);
+            color: var(--stone);
+            padding: 56px 0 32px;
+            margin-top: 80px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand .logo-main {
+            color: var(--paper);
+            font-size: 1.4rem;
+        }
+
+        .footer-brand .logo-sub {
+            color: var(--stone-dark);
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: var(--stone-dark);
+            margin-top: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            margin-bottom: 16px;
+            color: var(--paper);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            font-size: 0.84rem;
+            color: var(--stone-dark);
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: var(--stone-dark);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Highline House Ideas home">
+                <span class="logo-main">Highline House Ideas</span>
+                <span class="logo-sub">Interior Design & Architecture Journal</span>
+            </a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookies Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </nav>
+            <div style="display:flex;gap:8px;align-items:center;">
+                <button class="search-toggle" id="searchToggle" aria-label="Search articles">🔍</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search-bar" id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+        </div>
+    </div>
+</header>
+
+<!-- MAIN CONTENT — ABOUT PAGE -->
+<main role="main" id="mainContent">
+    <div id="page-about" class="page">
+        <div class="container">
+            <div class="page-section">
+                <h1>About Highline House Ideas</h1>
+
+                <p><strong>Highline House Ideas</strong> is an independent editorial publication dedicated to the built environment — specifically, the places we live. We publish in-depth articles, practical guides, and critical essays on interior design, residential architecture, materials, lighting, space planning, and sustainable building.</p>
+
+                <p>Our mission is simple: to provide useful, well-researched knowledge for homeowners, design enthusiasts, and professionals who care about how spaces are made. We believe good design is not a luxury but a fundamental part of a well-lived life. Whether you are renovating a small apartment, planning a new build, or simply curious about the principles behind a beautiful room, we aim to give you clarity, context, and inspiration.</p>
+
+                <div class="divider"></div>
+
+                <h2>Editorial Independence</h2>
+                <p>We do not accept sponsored content. Every article is researched, written, and edited by our team. We occasionally use affiliate links, but these never influence our recommendations or editorial judgment. Our only loyalty is to our readers.</p>
+                <p>We are reader-supported. When you buy through links on our site, we may earn an affiliate commission at no extra cost to you. This helps keep our journalism free and accessible.</p>
+
+                <div class="divider"></div>
+
+                <h2>Our Team</h2>
+                <p>Highline House Ideas is written and edited by a small, dedicated group of design professionals, journalists, and researchers based in Europe and beyond.</p>
+
+                <div class="editor-card">
+                    <img class="editor-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+                    <div class="editor-info">
+                        <h4>Elena Marchetti — Editor-in-Chief</h4>
+                        <p>Architect, author, and former principal at Studio Marchetti in Milan. Elena has over 15 years of experience in residential architecture and interior design. She founded Highline House Ideas to bridge the gap between professional knowledge and everyday homeowners.</p>
+                    </div>
+                </div>
+
+                <div class="editor-card">
+                    <img class="editor-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Portrait of James Okonkwo, Senior Editor">
+                    <div class="editor-info">
+                        <h4>James Okonkwo — Senior Editor, Architecture</h4>
+                        <p>London-based critic and architectural historian. James writes about residential architecture, urbanism, and the intersection of design and culture. He holds a PhD from the Bartlett School of Architecture.</p>
+                    </div>
+                </div>
+
+                <div class="editor-card">
+                    <img class="editor-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Portrait of Clara Lindqvist, Contributing Editor">
+                    <div class="editor-info">
+                        <h4>Clara Lindqvist — Contributing Editor, Interiors</h4>
+                        <p>Stockholm-based stylist and writer. Clara covers interior trends, materials, lighting, and the psychology of home. She is passionate about warm minimalism and sustainable living.</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <h2>What We Cover</h2>
+                <p>Our articles fall into several broad categories, each explored with depth and practical insight:</p>
+                <ul>
+                    <li><strong>Interior Design</strong> — Color, layout, styling, and the principles that make rooms feel cohesive.</li>
+                    <li><strong>Architecture</strong> — Residential design, passive house, vernacular approaches, and the future of housing.</li>
+                    <li><strong>Materials</strong> — Stone, wood, tile, countertops, and finishes: how to choose and how they perform.</li>
+                    <li><strong>Lighting</strong> — Layering, color temperature, fixtures, and the art of illuminating a home.</li>
+                    <li><strong>Space Planning</strong> — Making small apartments feel generous and large rooms feel intimate.</li>
+                    <li><strong>Furniture</strong> — Slow furniture, craftsmanship, and investing in pieces that last.</li>
+                    <li><strong>Sustainable Design</strong> — Energy efficiency, low-impact materials, and climate-responsive building.</li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <h2>Contact</h2>
+                <p>For editorial inquiries, pitches, or corrections, write to us at <a href="mailto:editors@highlinehouseideas.com">editors@highlinehouseideas.com</a>.</p>
+                <p>We welcome thoughtful correspondence from readers, designers, architects, and researchers. While we cannot respond to every message, we read everything we receive.</p>
+
+                <p style="margin-top: 32px; font-size: 0.9rem; color: var(--muted);">Highline House Ideas · Via della Spiga 14 · 20121 Milano, Italy</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-main">Highline House Ideas</div>
+                <div class="logo-sub">Interior Design & Architecture Journal</div>
+                <p>Independent editorial covering the built environment. In-depth articles, practical guides, and critical perspectives on residential design.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Topics</h5>
+                <ul>
+                    <li><a href="index.html">Interior Design</a></li>
+                    <li><a href="index.html">Architecture</a></li>
+                    <li><a href="index.html">Materials</a></li>
+                    <li><a href="index.html">Lighting</a></li>
+                    <li><a href="index.html">Space Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Information</h5>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Follow</h5>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Highline House Ideas. All rights reserved.</span>
+            <span>Made with care in Milan & London.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Search toggle
+    document.getElementById('searchToggle').addEventListener('click', function() {
+        const bar = document.getElementById('searchBar');
+        bar.classList.toggle('open');
+        if (bar.classList.contains('open')) {
+            document.getElementById('searchInput').focus();
+        }
+    });
+
+    // Close mobile menu on link click (for small screens)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+
+    // Simple search placeholder (non-functional, just UX)
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+        // In a full implementation, this would trigger a search.
+        // Kept minimal for the About page context.
+    });
+</script>
+</body>
+</html>

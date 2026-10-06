@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highline House Ideas — Interior Design & Architecture Journal</title>
+    <meta name="description" content="Highline House Ideas is a premium editorial blog covering interior design, architecture, materials, lighting, space planning, and sustainable design. In-depth guides and practical knowledge.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Highline House Ideas — Interior Design & Architecture Journal">
+    <meta property="og:description" content="In-depth articles on residential architecture, modern interiors, materials, lighting, and design principles.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highlinehouseideas.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://highlinehouseideas.com">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Highline House Ideas",
+      "description": "Premium editorial blog about interior design and architecture.",
+      "url": "https://highlinehouseideas.com",
+      "author": {
+        "@type": "Person",
+        "name": "Elena Marchetti"
+      }
+    }
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf9f7;
+            --paper-warm: #f4f1ed;
+            --stone: #e8e4df;
+            --stone-dark: #ccc7c0;
+            --accent: #b5651e;
+            --accent-light: #d4a373;
+            --muted: #6b6560;
+            --white: #ffffff;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.06);
+            --radius: 2px;
+            --max-width: 1280px;
+            --content-width: 720px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.6rem; }
+        h2 { font-size: 1.9rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+        h4 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 56px;
+            align-items: start;
+        }
+
+        @media (max-width: 1024px) {
+            .editorial-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+        }
+
+        /* Header */
+        .site-header {
+            border-bottom: 1px solid var(--stone);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+            background: rgba(250, 249, 247, 0.92);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-main {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            transition: color 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 1.5px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--ink);
+            border-bottom-color: var(--accent);
+        }
+
+        .search-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--muted);
+            padding: 8px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--ink);
+        }
+
+        @media (max-width: 860px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--paper);
+                flex-direction: column;
+                padding: 24px;
+                gap: 18px;
+                border-bottom: 1px solid var(--stone);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: none;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--stone);
+            background: var(--paper-warm);
+        }
+        .search-bar.open {
+            display: block;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid var(--stone-dark);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            background: var(--white);
+            outline: none;
+        }
+        .search-bar input:focus {
+            border-color: var(--accent);
+        }
+
+        /* Category Pills */
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 28px 0 20px;
+            border-bottom: 1px solid var(--stone);
+            margin-bottom: 40px;
+        }
+
+        .category-pill {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 500;
+            padding: 7px 16px;
+            border: 1px solid var(--stone-dark);
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: transparent;
+            color: var(--muted);
+            font-family: var(--font-sans);
+        }
+
+        .category-pill:hover,
+        .category-pill.active {
+            background: var(--ink);
+            color: var(--paper);
+            border-color: var(--ink);
+        }
+
+        /* Featured Article */
+        .featured-article {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 36px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--stone);
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 700px) {
+            .featured-article {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        .featured-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: var(--radius);
+        }
+
+        .featured-content .category-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        .featured-content h2 {
+            font-size: 2rem;
+            margin-bottom: 14px;
+            line-height: 1.2;
+        }
+
+        .featured-content h2 a:hover {
+            color: var(--accent);
+        }
+
+        .featured-meta {
+            font-size: 0.8rem;
+            color: var(--muted);
+            display: flex;
+            gap: 16px;
+            margin-top: 18px;
+            align-items: center;
+        }
+
+        .featured-excerpt {
+            font-size: 0.95rem;
+            color: #3d3a37;
+            margin-top: 8px;
+            line-height: 1.65;
+        }
+
+        /* Article Cards */
+        .section-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-weight: 600;
+            color: var(--muted);
+            margin-bottom: 24px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .article-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 600px) {
+            .article-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .article-card {
+            background: transparent;
+            border-bottom: 1px solid var(--stone);
+            padding-bottom: 28px;
+            margin-bottom: 8px;
+        }
+
+        .article-card .card-img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 16px;
+            background: var(--stone);
+        }
+
+        .article-card .card-category {
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .article-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .article-card h3 a:hover {
+            color: var(--accent);
+        }
+
+        .article-card .card-excerpt {
+            font-size: 0.88rem;
+            color: #4d4843;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .article-card .card-meta {
+            font-size: 0.75rem;
+            color: var(--muted);
+            display: flex;
+            gap: 14px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-widget {
+            margin-bottom: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .sidebar-widget:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget h4 {
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            margin-bottom: 18px;
+            letter-spacing: -0.01em;
+        }
+
+        .popular-item {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 18px;
+            align-items: flex-start;
+        }
+
+        .popular-num {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            color: var(--stone-dark);
+            line-height: 1;
+            min-width: 24px;
+        }
+
+        .popular-title {
+            font-size: 0.88rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .popular-title a:hover {
+            color: var(--accent);
+        }
+
+        .popular-meta {
+            font-size: 0.7rem;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        .author-box {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .author-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: var(--stone);
+        }
+
+        .author-info h5 {
+            font-family: var(--font-serif);
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .author-info p {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        .newsletter-widget {
+            background: var(--paper-warm);
+            padding: 24px;
+            border-radius: var(--radius);
+            border: 1px solid var(--stone);
+        }
+
+        .newsletter-widget h4 {
+            margin-bottom: 8px;
+        }
+
+        .newsletter-widget p {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        .newsletter-widget input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--stone-dark);
+            border-radius: var(--radius);
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            font-family: var(--font-sans);
+        }
+
+        .newsletter-widget button {
+            width: 100%;
+            padding: 10px;
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            border-radius: var(--radius);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 0.04em;
+            font-family: var(--font-sans);
+            transition: background 0.2s;
+        }
+
+        .newsletter-widget button:hover {
+            background: var(--accent);
+        }
+
+        /* Full Article Reading */
+        .full-article {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 40px 0 60px;
+        }
+
+        .full-article h1 {
+            margin-bottom: 16px;
+            font-size: 2.4rem;
+        }
+
+        .article-meta-top {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .full-article h2 {
+            margin-top: 40px;
+            margin-bottom: 14px;
+            font-size: 1.6rem;
+        }
+
+        .full-article h3 {
+            margin-top: 28px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .full-article p {
+            font-size: 1.02rem;
+            line-height: 1.8;
+            color: #2d2a27;
+        }
+
+        .full-article ul, .full-article ol {
+            margin: 0 0 20px 24px;
+            font-size: 1.02rem;
+            line-height: 1.8;
+            color: #2d2a27;
+        }
+
+        .full-article li {
+            margin-bottom: 6px;
+        }
+
+        .full-article img {
+            width: 100%;
+            border-radius: var(--radius);
+            margin: 28px 0;
+        }
+
+        .full-article blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 24px;
+            margin: 28px 0;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #3d3a37;
+        }
+
+        .related-articles {
+            margin-top: 56px;
+            padding-top: 32px;
+            border-top: 1px solid var(--stone);
+        }
+
+        .related-articles h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+        }
+
+        /* FAQ */
+        .faq-section {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--stone);
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1.02rem;
+            font-family: var(--font-serif);
+        }
+
+        .faq-question span {
+            font-size: 1.4rem;
+            color: var(--accent);
+            transition: transform 0.2s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-size: 0.95rem;
+            color: #4d4843;
+            line-height: 1.7;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+            padding-top: 14px;
+        }
+
+        .faq-item.open .faq-question span {
+            transform: rotate(45deg);
+        }
+
+        /* About / Contact / Legal Pages */
+        .page-section {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .page-section h1 {
+            margin-bottom: 24px;
+        }
+
+        .page-section h2 {
+            margin-top: 32px;
+            font-size: 1.4rem;
+        }
+
+        .page-section p {
+            font-size: 1rem;
+            color: #3d3a37;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--ink);
+            color: var(--stone);
+            padding: 56px 0 32px;
+            margin-top: 80px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand .logo-main {
+            color: var(--paper);
+            font-size: 1.4rem;
+        }
+
+        .footer-brand .logo-sub {
+            color: var(--stone-dark);
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: var(--stone-dark);
+            margin-top: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            margin-bottom: 16px;
+            color: var(--paper);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            font-size: 0.84rem;
+            color: var(--stone-dark);
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: var(--stone-dark);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* Utility */
+        .hidden { display: none !important; }
+        .text-center { text-align: center; }
+
+        .reading-time {
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        /* Category tag colors */
+        .cat-interior { color: #8b5e3c; }
+        .cat-architecture { color: #3c6e8b; }
+        .cat-materials { color: #6b8b3c; }
+        .cat-lighting { color: #b58b1e; }
+        .cat-furniture { color: #8b3c6e; }
+        .cat-space { color: #3c8b6e; }
+        .cat-sustainable { color: #5e8b3c; }
+        .cat-modern { color: #6e3c8b; }
+        .cat-renovation { color: #8b6e3c; }
+        .cat-small { color: #3c5e8b; }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#" class="logo" aria-label="Highline House Ideas home">
+                <span class="logo-main">Highline House Ideas</span>
+                <span class="logo-sub">Interior Design & Architecture Journal</span>
+            </a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </nav>
+            <div style="display:flex;gap:8px;align-items:center;">
+                <button class="search-toggle" id="searchToggle" aria-label="Search articles">🔍</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search-bar" id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+        </div>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main role="main" id="mainContent">
+
+    <!-- HOME PAGE -->
+    <div id="page-home" class="page">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="category-filter" id="categoryFilter">
+                <button class="category-pill active" data-category="all">All</button>
+                <button class="category-pill" data-category="Interior Design">Interior Design</button>
+                <button class="category-pill" data-category="Architecture">Architecture</button>
+                <button class="category-pill" data-category="Home Design">Home Design</button>
+                <button class="category-pill" data-category="Materials">Materials</button>
+                <button class="category-pill" data-category="Space Planning">Space Planning</button>
+                <button class="category-pill" data-category="Lighting">Lighting</button>
+                <button class="category-pill" data-category="Furniture">Furniture</button>
+                <button class="category-pill" data-category="Modern Homes">Modern Homes</button>
+            </div>
+
+            <!-- Featured Article -->
+            <article class="featured-article">
+                <img class="featured-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Modern living room with floor-to-ceiling windows, neutral tones, and minimalist furniture">
+                <div class="featured-content">
+                    <span class="category-tag">Architecture</span>
+                    <h2><a href="#" data-article="featured">The New Vernacular: How Contemporary Residential Architecture Reconnects with Place</a></h2>
+                    <p class="featured-excerpt">A deep dive into the architects rejecting universal modernism in favor of climate-responsive, locally rooted design — and what it means for the future of the home.</p>
+                    <div class="featured-meta">
+                        <span>Elena Marchetti</span>
+                        <span>•</span>
+                        <span>April 12, 2025</span>
+                        <span>•</span>
+                        <span class="reading-time">18 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Articles Grid -->
+            <div class="editorial-grid">
+                <div>
+                    <div class="section-label">Latest Articles</div>
+                    <div class="article-list" id="articleList">
+                        <!-- Articles injected via JS -->
+                    </div>
+                </div>
+
+                <!-- SIDEBAR -->
+                <aside class="sidebar" role="complementary">
+                    <div class="sidebar-widget">
+                        <h4>Popular This Week</h4>
+                        <div class="popular-item">
+                            <span class="popular-num">1</span>
+                            <div>
+                                <div class="popular-title"><a href="#" data-article="popular1">The 7 Most Common Lighting Mistakes (and How to Fix Them)</a></div>
+                                <div class="popular-meta">Lighting · 12 min</div>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <span class="popular-num">2</span>
+                            <div>
+                                <div class="popular-title"><a href="#" data-article="popular2">A Complete Guide to Choosing Kitchen Countertops</a></div>
+                                <div class="popular-meta">Materials · 16 min</div>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <span class="popular-num">3</span>
+                            <div>
+                                <div class="popular-title"><a href="#" data-article="popular3">How to Plan a Small Apartment Layout That Feels Spacious</a></div>
+                                <div class="popular-meta">Space Planning · 14 min</div>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <span class="popular-num">4</span>
+                            <div>
+                                <div class="popular-title"><a href="#" data-article="popular4">The Return of Warm Minimalism in Interior Design</a></div>
+                                <div class="popular-meta">Interior Design · 10 min</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4>About the Editor</h4>
+                        <div class="author-box">
+                            <img class="author-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Portrait of Elena Marchetti, editor-in-chief">
+                            <div class="author-info">
+                                <h5>Elena Marchetti</h5>
+                                <p>Architect and design writer based in Milan. 15+ years covering residential architecture and interiors.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget newsletter-widget">
+                        <h4>The Highline Letter</h4>
+                        <p>Weekly design intelligence. No noise, just substance.</p>
+                        <input type="email" placeholder="Your email address" aria-label="Email address">
+                        <button onclick="alert('Thank you for subscribing to The Highline Letter.')">Subscribe</button>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- FULL ARTICLE PAGE -->
+    <div id="page-article" class="page hidden">
+        <div class="container">
+            <div class="full-article" id="fullArticleContent">
+                <!-- Article content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="page-about" class="page hidden">
+        <div class="container">
+            <div class="page-section">
+                <h1>About Highline House Ideas</h1>
+                <p>Highline House Ideas is an independent editorial publication dedicated to the built environment — specifically, the places we live. We publish in-depth articles, practical guides, and critical essays on interior design, residential architecture, materials, lighting, space planning, and sustainable building.</p>
+                <p>Our mission is simple: to provide useful, well-researched knowledge for homeowners, design enthusiasts, and professionals who care about how spaces are made. We believe good design is not a luxury but a fundamental part of a well-lived life.</p>
+                <h2>Editorial Independence</h2>
+                <p>We do not accept sponsored content. Every article is researched, written, and edited by our team. We occasionally use affiliate links, but these never influence our recommendations or editorial judgment.</p>
+                <h2>Our Team</h2>
+                <p><strong>Elena Marchetti</strong> — Editor-in-Chief. Architect, author, and former principal at Studio Marchetti in Milan.</p>
+                <p><strong>James Okonkwo</strong> — Senior Editor, Architecture. London-based critic and historian.</p>
+                <p><strong>Clara Lindqvist</strong> — Contributing Editor, Interiors. Stockholm-based stylist and writer.</p>
+                <h2>Contact</h2>
+                <p>For editorial inquiries, pitches, or corrections, write to us at <a href="mailto:editors@highlinehouseideas.com" style="color:var(--accent);">editors@highlinehouseideas.com</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="page-contact" class="page hidden">
+        <div class="container">
+            <div class="page-section">
+                <h1>Contact</h1>
+                <p>We welcome thoughtful correspondence from readers, designers, architects, and researchers.</p>
+                <h2>Editorial</h2>
+                <p>Email: <a href="mailto:editors@highlinehouseideas.com" style="color:var(--accent);">editors@highlinehouseideas.com</a></p>
+                <h2>Pitches</h2>
+                <p>We accept pitches for feature articles and long-form essays. Please include a 200-word summary and your credentials.</p>
+                <h2>Advertising & Partnerships</h2>
+                <p>We do not accept display advertising. For partnership inquiries, email <a href="mailto:partners@highlinehouseideas.com" style="color:var(--accent);">partners@highlinehouseideas.com</a>.</p>
+                <h2>Mailing Address</h2>
+                <p>Highline House Ideas<br>Via della Spiga 14<br>20121 Milano, Italy</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRIVACY PAGE -->
+    <div id="page-privacy" class="page hidden">
+        <div class="container">
+            <div class="page-section">
+                <h1>Privacy Policy</h1>
+                <p>Last updated: January 2025</p>
+                <p>Highline House Ideas respects your privacy. This policy explains what data we collect and how we use it.</p>
+                <h2>Data We Collect</h2>
+                <p>We collect email addresses only when voluntarily provided for newsletter subscriptions. We use analytics to understand readership patterns but do not track individual users across sites.</p>
+                <h2>Cookies</h2>
+                <p>We use essential cookies for site functionality and anonymous analytics cookies. You can disable cookies in your browser settings.</p>
+                <h2>Third Parties</h2>
+                <p>We do not sell, trade, or share your personal information with third parties.</p>
+                <h2>Your Rights</h2>
+                <p>You may request deletion of your data at any time by emailing privacy@highlinehouseideas.com.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMS PAGE -->
+    <div id="page-terms" class="page hidden">
+        <div class="container">
+            <div class="page-section">
+                <h1>Terms of Use</h1>
+                <p>By accessing Highline House Ideas, you agree to these terms.</p>
+                <h2>Content</h2>
+                <p>All content is provided for informational purposes. We make no warranties regarding accuracy or completeness. Use of information is at your own risk.</p>
+                <h2>Intellectual Property</h2>
+                <p>All original text and graphics are the property of Highline House Ideas. Reproduction without permission is prohibited.</p>
+                <h2>External Links</h2>
+                <p>We are not responsible for the content of external sites linked from our articles.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- COOKIE PAGE -->
+    <div id="page-cookie" class="page hidden">
+        <div class="container">
+            <div class="page-section">
+                <h1>Cookie Policy</h1>
+                <p>Highline House Ideas uses minimal cookies for site functionality and anonymous analytics.</p>
+                <h2>Essential Cookies</h2>
+                <p>These are required for basic site features such as navigation and search.</p>
+                <h2>Analytics Cookies</h2>
+                <p>We use privacy-respecting analytics to understand which articles are most useful. No personally identifiable information is collected.</p>
+                <h2>Managing Cookies</h2>
+                <p>You can control and delete cookies through your browser settings at any time.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ SECTION (on home) -->
+    <div class="container" id="faqSectionHome">
+        <div class="faq-section">
+            <div class="section-label">Frequently Asked Questions</div>
+            <div class="faq-item">
+                <div class="faq-question">What is the difference between interior design and interior decoration? <span>+</span></div>
+                <div class="faq-answer">Interior design involves the planning and construction of interior spaces, including technical elements like lighting, materials, and structural changes. Interior decoration focuses on finishes, furniture, and aesthetics without altering the architecture.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How much does a residential architecture project typically cost? <span>+</span></div>
+                <div class="faq-answer">Costs vary widely by region and scope. As a general guideline, architectural fees range from 8–15% of construction cost for full-service design. For renovations, expect $150–$400 per square foot depending on finishes and complexity.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are the most important principles of space planning? <span>+</span></div>
+                <div class="faq-answer">The core principles are circulation (clear paths), zoning (grouping activities), proportion (scale of furniture to room), and natural light maximization. Good space planning makes a small room feel generous and a large room feel intimate.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do I choose the right lighting for a room? <span>+</span></div>
+                <div class="faq-answer">Layer your lighting: ambient (general), task (specific work areas), and accent (feature highlights). Use warm bulbs (2700K–3000K) for living spaces and cooler (3500K–4000K) for kitchens and bathrooms. Dimmers are essential.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is sustainable architecture? <span>+</span></div>
+                <div class="faq-answer">Sustainable architecture minimizes environmental impact through energy efficiency, responsible material selection, water conservation, and site-sensitive design. It includes passive design strategies, renewable energy, and durable, low-toxicity materials.</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-main">Highline House Ideas</div>
+                <div class="logo-sub">Interior Design & Architecture Journal</div>
+                <p>Independent editorial covering the built environment. In-depth articles, practical guides, and critical perspectives on residential design.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Topics</h5>
+                <ul>
+                    <li><a href="#" data-page="home">Interior Design</a></li>
+                    <li><a href="#" data-page="home">Architecture</a></li>
+                    <li><a href="#" data-page="home">Materials</a></li>
+                    <li><a href="#" data-page="home">Lighting</a></li>
+                    <li><a href="#" data-page="home">Space Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Information</h5>
+                <ul>
+                    <li><a href="#" data-page="about">About</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                    <li><a href="#" data-page="privacy">Privacy Policy</a></li>
+                    <li><a href="#" data-page="terms">Terms of Use</a></li>
+                    <li><a href="#" data-page="cookie">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Follow</h5>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Highline House Ideas. All rights reserved.</span>
+            <span>Made with care in Milan & London.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ============================================================
+    // ARTICLE DATABASE
+    // ============================================================
+    const articles = [
+        {
+            id: 'featured',
+            title: 'The New Vernacular: How Contemporary Residential Architecture Reconnects with Place',
+            category: 'Architecture',
+            excerpt: 'A deep dive into the architects rejecting universal modernism in favor of climate-responsive, locally rooted design — and what it means for the future of the home.',
+            author: 'Elena Marchetti',
+            date: 'April 12, 2025',
+            readTime: '18 min read',
+            image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop',
+            imageAlt: 'Modern living room with floor-to-ceiling windows, neutral tones, and minimalist furniture',
+            featured: true
+        },
+        {
+            id: 'a1',
+            title: 'The 7 Most Common Lighting Mistakes (and How to Fix Them)',
+            category: 'Lighting',
+            excerpt: 'Overhead-only lighting, wrong color temperature, and ignoring dimmers — these are the errors that make even well-designed rooms feel flat. Here is how to correct them.',
+            author: 'Clara Lindqvist',
+            date: 'April 10, 2025',
+            readTime: '12 min read',
+            image: 'https://images.unsplash.com/photo-1565538810643-73b7bf723d05?w=600&h=400&fit=crop',
+            imageAlt: 'Warm ambient lighting in a modern living room with floor lamp and wall sconces'
+        },
+        {
+            id: 'a2',
+            title: 'A Complete Guide to Choosing Kitchen Countertops',
+            category: 'Materials',
+            excerpt: 'Granite, quartz, marble, butcher block, or porcelain? We compare durability, maintenance, cost, and aesthetics across the most popular countertop materials.',
+            author: 'James Okonkwo',
+            date: 'April 8, 2025',
+            readTime: '16 min read',
+            image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop',
+            imageAlt: 'Modern kitchen with white quartz countertops and minimalist cabinetry'
+        },
+        {
+            id: 'a3',
+            title: 'How to Plan a Small Apartment Layout That Feels Spacious',
+            category: 'Space Planning',
+            excerpt: 'Strategic zoning, multifunctional furniture, and the 60/30/10 rule of visual weight — practical strategies for making compact homes feel generous.',
+            author: 'Elena Marchetti',
+            date: 'April 5, 2025',
+            readTime: '14 min read',
+            image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop',
+            imageAlt: 'Small apartment living room with clever storage and light colors'
+        },
+        {
+            id: 'a4',
+            title: 'The Return of Warm Minimalism in Interior Design',
+            category: 'Interior Design',
+            excerpt: 'Cold, stark minimalism is giving way to a softer, more tactile approach. We explore the materials, colors, and textures defining warm minimalism.',
+            author: 'Clara Lindqvist',
+            date: 'April 2, 2025',
+            readTime: '10 min read',
+            image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop',
+            imageAlt: 'Warm minimalist living room with natural wood, linen, and soft neutral tones'
+        },
+        {
+            id: 'a5',
+            title: 'Understanding Passive House Design: A Primer',
+            category: 'Architecture',
+            excerpt: 'What is a Passive House, and why does it matter? We break down the principles of superinsulation, airtightness, and heat recovery ventilation.',
+            author: 'James Okonkwo',
+            date: 'March 28, 2025',
+            readTime: '15 min read',
+            image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&h=400&fit=crop',
+            imageAlt: 'Contemporary passive house with large south-facing windows and timber cladding'
+        },
+        {
+            id: 'a6',
+            title: 'The Psychology of Color in Interior Design',
+            category: 'Interior Design',
+            excerpt: 'How do different hues affect mood, perception of space, and even productivity? A research-backed guide to choosing colors for every room.',
+            author: 'Elena Marchetti',
+            date: 'March 25, 2025',
+            readTime: '13 min read',
+            image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=400&fit=crop',
+            imageAlt: 'Colorful yet sophisticated living room with sage green walls and terracotta accents'
+        },
+        {
+            id: 'a7',
+            title: 'How to Design a Bathroom That Feels Like a Spa',
+            category: 'Home Design',
+            excerpt: 'From steam showers to heated floors and the right lighting temperature — the design details that transform an ordinary bathroom into a retreat.',
+            author: 'Clara Lindqvist',
+            date: 'March 22, 2025',
+            readTime: '11 min read',
+            image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop',
+            imageAlt: 'Spa-like bathroom with natural stone, freestanding tub, and soft lighting'
+        },
+        {
+            id: 'a8',
+            title: 'The Case for Slow Furniture: Quality Over Quantity',
+            category: 'Furniture',
+            excerpt: 'Why investing in fewer, better-made pieces is better for your home, your wallet, and the planet. A guide to identifying craftsmanship.',
+            author: 'Elena Marchetti',
+            date: 'March 18, 2025',
+            readTime: '9 min read',
+            image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop',
+            imageAlt: 'Well-crafted walnut dining chair with visible joinery in a bright room'
+        }
+    ];
+
+    // Full article content (long-form)
+    const fullArticles = {
+        'featured': `
+            <h1>The New Vernacular: How Contemporary Residential Architecture Reconnects with Place</h1>
+            <div class="article-meta-top">
+                <span>By Elena Marchetti</span>
+                <span>•</span>
+                <span>April 12, 2025</span>
+                <span>•</span>
+                <span>18 min read</span>
+            </div>
+            <p>For much of the late twentieth century, residential architecture followed a logic of universalism. The same white boxes, the same curtain walls, the same imported materials could be found from Vancouver to Dubai to Seoul. Climate was something to be overcome by mechanical systems; context was a constraint to be ignored. But a quiet revolution has been taking place over the past fifteen years. A new generation of architects is rejecting the placelessness of global modernism in favor of something more rooted, more responsive, and ultimately more human.</p>
+            <p>This movement — which we might call the New Vernacular — is not a nostalgic return to historical styles. It is not about slapping a pitched roof on a glass box or decorating a contemporary home with regional motifs. Instead, it is a rigorous, research-driven approach that begins with a simple question: <em>What does this place ask of us?</em></p>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=700&fit=crop" alt="Modern living room with floor-to-ceiling windows, neutral tones, and minimalist furniture">
+            <h2>Climate as a Design Generator</h2>
+            <p>The most obvious dimension of the New Vernacular is climate responsiveness. In hot-arid climates, architects are rediscovering the thermal mass of earth and stone, the cooling effect of courtyards and water, and the strategic use of small openings and deep overhangs. In tropical regions, the focus shifts to cross-ventilation, elevated structures, and shading devices that let air move while blocking direct sun.</p>
+            <p>Consider the work of Studio Mumbai in India, or Tatiana Bilbao in Mexico, or Francis Kéré in Burkina Faso. Each has developed a vocabulary that is unmistakably modern yet deeply informed by local climate and craft traditions. Kéré's buildings in Gando use clay bricks made by villagers, elevated metal roofs for ventilation, and a structural logic that responds to the intense heat of the Sahel. These are not primitive gestures; they are sophisticated engineering solutions disguised as vernacular common sense.</p>
+            <blockquote>"The most sustainable building is the one that responds to its climate without mechanical intervention. Everything else is just offsetting bad design." — Francis Kéré</blockquote>
+            <h2>Material Honesty and Local Craft</h2>
+            <p>A second pillar of the New Vernacular is material honesty. Where modernism often celebrated the industrial — steel, glass, and concrete — the new vernacular embraces materials that age gracefully and carry the imprint of their origin. Timber from local forests, stone from nearby quarries, lime plaster, rammed earth, and recycled materials all play a role.</p>
+            <p>This is not merely aesthetic. Using local materials reduces embodied carbon from transportation, supports regional economies, and creates buildings that feel inevitable rather than imported. The architects of this movement are also deeply interested in craft — the knowledge held by local builders, joiners, and stonemasons. They collaborate rather than dictate, allowing traditional techniques to inform contemporary forms.</p>
+            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200&h=700&fit=crop" alt="Contemporary passive house with large south-facing windows and timber cladding">
+            <h2>What This Means for Homeowners</h2>
+            <p>If you are planning a new home or a major renovation, the New Vernacular offers a useful framework. Ask yourself: What is the sun's path across my site? Where does the wind come from? What materials are available within a day's drive? What can I learn from the buildings that have stood in this region for generations?</p>
+            <p>These questions lead to better buildings — buildings that are more comfortable, more efficient, and more connected to their surroundings. They also lead to homes that feel like they belong, rather than homes that could be anywhere.</p>
+            <p>The New Vernacular is not a style you can buy from a catalog. It is a way of thinking. And it is, we believe, the future of residential architecture.</p>
+        `,
+        'a1': `
+            <h1>The 7 Most Common Lighting Mistakes (and How to Fix Them)</h1>
+            <div class="article-meta-top">
+                <span>By Clara Lindqvist</span>
+                <span>•</span>
+                <span>April 10, 2025</span>
+                <span>•</span>
+                <span>12 min read</span>
+            </div>
+            <p>Lighting is the most misunderstood element of interior design. Get it right, and even a modest room feels magical. Get it wrong, and the most expensive furniture and finishes look flat and lifeless. After a decade of visiting homes and reviewing design projects, I have identified seven recurring mistakes. Here they are — and how to fix them.</p>
+            <h2>1. Relying on a Single Overhead Light</h2>
+            <p>The most common error is treating one central ceiling fixture as sufficient. This creates harsh shadows, flattens the space, and fails to support the different activities that happen in a room. The fix is layering: combine ambient (general) light with task lighting (for reading, cooking, working) and accent lighting (to highlight art or architectural features).</p>
+            <h2>2. Choosing the Wrong Color Temperature</h2>
+            <p>Color temperature is measured in Kelvin (K). Warm light (2700K–3000K) is flattering and cozy, ideal for living rooms and bedrooms. Cool light (3500K–5000K) is alert and crisp, better for kitchens, bathrooms, and workspaces. Mixing temperatures in the same room creates visual chaos. Choose one temperature per room and stick to it.</p>
+            <h2>3. Ignoring Dimmers</h2>
+            <p>A dimmer is the single most cost-effective upgrade you can make to your lighting. It allows you to adjust the mood and intensity for different times of day and activities. Install dimmers on all main lighting circuits, and use smart bulbs for lamps.</p>
+            <h2>4. Forgetting the Vertical Plane</h2>
+            <p>Lighting should not just come from above. Wall sconces, picture lights, and floor lamps that bounce light off the ceiling or walls add depth and warmth. Aim for at least three light sources at different heights in every room.</p>
+            <h2>5. Underlighting the Kitchen</h2>
+            <p>Kitchens need abundant task lighting. Under-cabinet lights, pendant lights over islands, and recessed spotlights over work zones are essential. Do not rely on a single ceiling fixture. Also, consider the color rendering index (CRI) of your bulbs — aim for CRI 90+ so food looks appetizing.</p>
+            <h2>6. Neglecting Natural Light</h2>
+            <p>No artificial lighting scheme can replace good daylight. Keep window treatments light and unobtrusive, avoid placing tall furniture in front of windows, and consider skylights or light tubes in dark corridors. Mirrors placed opposite windows can double the daylight.</p>
+            <h2>7. Using the Wrong Bulb Type</h2>
+            <p>Incandescent bulbs are obsolete. Halogen is inefficient. CFLs are slow to warm up. The best choice today is LED — but not all LEDs are equal. Look for high CRI, dimmable, and the correct color temperature. Cheap LEDs flicker, buzz, and have poor color rendering. Spend a little more for quality.</p>
+            <h2>The Takeaway</h2>
+            <p>Good lighting is not about brightness; it is about control and layering. Fix these seven mistakes, and your rooms will immediately feel more considered, more comfortable, and more beautiful.</p>
+        `,
+        'a2': `
+            <h1>A Complete Guide to Choosing Kitchen Countertops</h1>
+            <div class="article-meta-top">
+                <span>By James Okonkwo</span>
+                <span>•</span>
+                <span>April 8, 2025</span>
+                <span>•</span>
+                <span>16 min read</span>
+            </div>
+            <p>The kitchen countertop is one of the hardest-working surfaces in your home. It needs to withstand heat, knives, stains, and daily wear while also looking beautiful. With dozens of materials on the market, choosing the right one can feel overwhelming. This guide breaks down the options by durability, maintenance, cost, and aesthetics.</p>
+            <h2>Granite</h2>
+            <p>Granite is a natural stone, quarried in large blocks and sliced into slabs. It is extremely hard, heat-resistant, and each slab is unique. However, it is porous and requires sealing every year or two. It can chip, and the patterns can be busy. Cost: $60–$120 per square foot installed.</p>
+            <h2>Quartz (Engineered Stone)</h2>
+            <p>Quartz countertops are made from ground quartz mixed with resin. They are non-porous, stain-resistant, and require no sealing. They come in a wide range of colors and patterns, including realistic marble looks. They are slightly less heat-resistant than granite (use trivets). Cost: $70–$150 per square foot installed.</p>
+            <h2>Marble</h2>
+            <p>Marble is the classic choice for elegance, but it is soft and porous. It etches easily from acidic foods and stains from oil and wine. It requires regular sealing and careful maintenance. If you love the patina of aged marble, it can be beautiful, but it is not for everyone. Cost: $80–$200 per square foot installed.</p>
+            <h2>Butcher Block</h2>
+            <p>Wood countertops are warm, tactile, and knife-friendly. They require oiling every few months and can be damaged by water if not properly sealed. They are relatively affordable and can be sanded and refinished if needed. Cost: $40–$80 per square foot installed.</p>
+            <h2>Porcelain and Ceramic Tile</h2>
+            <p>Tile countertops are inexpensive and easy to install, but the grout lines are difficult to keep clean. Modern large-format porcelain slabs solve this problem, offering the look of stone without the maintenance. Cost: $20–$60 per square foot for tile; $60–$120 for porcelain slabs.</p>
+            <h2>Stainless Steel</h2>
+            <p>Stainless steel is hygienic, heat-resistant, and easy to clean, making it a favorite in professional kitchens. It does scratch and show fingerprints, and it can feel cold. Cost: $80–$150 per square foot installed.</p>
+            <h2>How to Choose</h2>
+            <p>Start with your priorities: Do you cook a lot? Choose quartz or granite. Do you love the look of marble and accept the maintenance? Go for it. Are you on a budget? Consider butcher block or tile. And always ask for a sample to take home — countertops look different in your kitchen's lighting.</p>
+        `,
+        'a3': `
+            <h1>How to Plan a Small Apartment Layout That Feels Spacious</h1>
+            <div class="article-meta-top">
+                <span>By Elena Marchetti</span>
+                <span>•</span>
+                <span>April 5, 2025</span>
+                <span>•</span>
+                <span>14 min read</span>
+            </div>
+            <p>Small apartments are a fact of life for millions of people in cities around the world. But small does not have to mean cramped. With careful planning, a compact home can feel generous, calm, and highly functional. Here are the principles that professional designers use to make small spaces work.</p>
+            <h2>Start with Circulation</h2>
+            <p>The first step is to map out how you move through the apartment. The path from door to kitchen to living area to bathroom should be clear and unobstructed. Avoid placing furniture in these paths. A common mistake is pushing all furniture against the walls, which actually makes a room feel smaller because the center becomes a no-man's-land. Instead, pull furniture into the room to create distinct zones.</p>
+            <h2>Zone Your Space</h2>
+            <p>In a studio or open-plan apartment, zoning is essential. Use rugs, lighting, and furniture arrangement to define areas for sleeping, living, cooking, and working. A rug under the bed, for example, visually separates the sleeping area from the rest of the room. A sofa facing a wall-mounted TV with a rug beneath creates a living zone.</p>
+            <h2>Choose Multifunctional Furniture</h2>
+            <p>Every piece of furniture in a small apartment should earn its place. Look for storage ottomans, sofa beds, extendable tables, and beds with drawers underneath. Wall-mounted desks that fold down are excellent for work-from-home setups. A kitchen island on casters can double as a dining table or prep space.</p>
+            <h2>Use Vertical Space</h2>
+            <p>When you cannot expand outward, go up. Floor-to-ceiling shelving, wall-mounted hooks, and high cabinets make use of vertical space without cluttering the floor. In kitchens, hang pots and pans. In bathrooms, install shelves above the toilet. In bedrooms, use the space above the door for storage.</p>
+            <h2>Maximize Light</h2>
+            <p>Light makes a space feel larger. Keep window treatments light and sheer. Use mirrors strategically — opposite a window to reflect light, or on a dark wall to create depth. Choose a light color palette for walls and floors; dark colors absorb light and make rooms feel smaller. Add layered lighting so you can adjust the brightness and mood.</p>
+            <h2>Edit Ruthlessly</h2>
+            <p>Clutter is the enemy of small-space living. Adopt a one-in-one-out rule. Store things you do not use daily in labeled boxes. Keep surfaces clear. The less visual noise, the more spacious the apartment will feel.</p>
+            <h2>The Takeaway</h2>
+            <p>A small apartment can be a beautiful, efficient home if you plan it with intention. Focus on circulation, zoning, multifunctionality, vertical storage, light, and decluttering. These principles work at any budget.</p>
+        `,
+        'a4': `
+            <h1>The Return of Warm Minimalism in Interior Design</h1>
+            <div class="article-meta-top">
+                <span>By Clara Lindqvist</span>
+                <span>•</span>
+                <span>April 2, 2025</span>
+                <span>•</span>
+                <span>10 min read</span>
+            </div>
+            <p>For years, minimalism was associated with cold, clinical spaces: white walls, bare floors, and a distinct lack of comfort. But a new interpretation has emerged — one that keeps the clarity and calm of minimalism while adding warmth, texture, and a sense of home. This is warm minimalism, and it is transforming interiors.</p>
+            <h2>What Is Warm Minimalism?</h2>
+            <p>Warm minimalism is a design philosophy that combines the principles of minimalism — reduction, order, and intentionality — with natural materials, soft colors, and tactile textures. Instead of stark white and chrome, you will find off-white, beige, taupe, and warm grey. Instead of glossy surfaces, you will find matte finishes, raw wood, linen, wool, and stone. The result is a space that feels both serene and inviting.</p>
+            <h2>Key Materials</h2>
+            <p>Natural materials are central to warm minimalism. Think oak, walnut, and ash for furniture and floors. Linen and cotton for upholstery and curtains. Wool for rugs and throws. Stone and ceramic for surfaces. These materials age gracefully and add subtle variation that keeps a minimal space from feeling sterile.</p>
+            <h2>Color Palette</h2>
+            <p>Stick to a tight palette of warm neutrals. Cream, oatmeal, sand, clay, and soft grey are the building blocks. Add depth with slightly darker tones like mushroom or warm charcoal. Avoid pure black and pure white — they create harsh contrast. The goal is a gentle, layered look.</p>
+            <h2>Texture Over Ornament</h2>
+            <p>In warm minimalism, texture replaces decoration. A bouclé chair, a chunky knit throw, a rough plaster wall, a hand-thrown ceramic vase — these elements provide visual interest without adding clutter. The eye is drawn to the play of light on different surfaces rather than to patterns or colors.</p>
+            <h2>Lighting</h2>
+            <p>Lighting should be soft and layered. Use warm bulbs (2700K), dimmers, and multiple sources at different heights. Paper lanterns, fabric shades, and wall sconces are all appropriate. Avoid harsh downlights and cool white bulbs.</p>
+            <h2>How to Get the Look</h2>
+            <p>Start by decluttering. Keep only what you love and use. Choose a warm neutral for walls — something like Farrow & Ball's "Shaded White" or "Drop Cloth." Replace synthetic fabrics with natural ones. Add a large, textured rug. Use baskets and wooden bowls for storage. And remember: in warm minimalism, less is more, but what you do have should be beautiful and meaningful.</p>
+        `,
+        'a5': `
+            <h1>Understanding Passive House Design: A Primer</h1>
+            <div class="article-meta-top">
+                <span>By James Okonkwo</span>
+                <span>•</span>
+                <span>March 28, 2025</span>
+                <span>•</span>
+                <span>15 min read</span>
+            </div>
+            <p>The Passive House standard is widely considered the most rigorous energy efficiency standard in the world. A Passive House uses up to 90% less heating and cooling energy than a conventional building, while maintaining superior indoor comfort and air quality. Here is what you need to know.</p>
+            <h2>The Five Principles</h2>
+            <p>Passive House design is built on five core principles:</p>
+            <ol>
+                <li><strong>Superinsulation:</strong> Thick, continuous insulation with no thermal bridges.</li>
+                <li><strong>Airtight construction:</strong> The building envelope is sealed to prevent air leakage.</li>
+                <li><strong>Thermal bridge-free design:</strong> Eliminating points where heat can bypass insulation.</li>
+                <li><strong>High-performance windows:</strong> Triple-glazed, argon-filled, with insulated frames.</li>
+                <li><strong>Heat recovery ventilation:</strong> A mechanical system that brings in fresh air while recovering heat from outgoing air.</li>
+            </ol>
+            <h2>Why It Matters</h2>
+            <p>Buildings account for roughly 40% of global energy consumption. Passive House offers a proven path to drastically reduce that footprint while creating healthier, more comfortable homes. Because the building is so well sealed and insulated, indoor temperatures remain stable year-round, and filtered ventilation reduces allergens and pollutants.</p>
+            <h2>Is It Expensive?</h2>
+            <p>Passive House construction typically costs 5–10% more upfront than conventional building. However, the energy savings, improved comfort, and durability often offset this over time. Many governments offer incentives for Passive House certification. And as the standard becomes more common, costs are coming down.</p>
+            <h2>Getting Started</h2>
+            <p>If you are planning a new home or deep renovation, ask your architect about Passive House principles. Not every project needs full certification, but incorporating even some of the principles will improve performance. The key is to design the envelope first — insulation, airtightness, and windows — before worrying about mechanical systems. A good envelope makes everything else easier.</p>
+        `,
+        'a6': `
+            <h1>The Psychology of Color in Interior Design</h1>
+            <div class="article-meta-top">
+                <span>By Elena Marchetti</span>
+                <span>•</span>
+                <span>March 25, 2025</span>
+                <span>•</span>
+                <span>13 min read</span>
+            </div>
+            <p>Color is one of the most powerful tools in interior design. It affects mood, perception of space, and even behavior. Understanding the psychology of color can help you choose a palette that supports the way you want to live.</p>
+            <h2>Warm Colors</h2>
+            <p>Reds, oranges, and yellows are stimulating and energizing. They can make a large room feel more intimate and encourage conversation. Red is associated with passion and appetite — it is often used in dining rooms. Yellow is cheerful and optimistic, good for kitchens and hallways. Orange is creative and playful, ideal for studios or playrooms. Use warm colors in moderation; too much can feel overwhelming.</p>
+            <h2>Cool Colors</h2>
+            <p>Blues, greens, and purples are calming and restful. They make spaces feel larger and more airy. Blue is the most universally liked color and promotes relaxation — perfect for bedrooms. Green connects us to nature and is associated with balance and renewal. Purple is contemplative and creative, often used in meditation spaces or libraries. Cool colors work well in south-facing rooms that receive lots of light.</p>
+            <h2>Neutrals</h2>
+            <p>White, grey, beige, and taupe are the backbone of interior design. They provide a calm backdrop that allows other elements to shine. Pure white can feel sterile; warm whites and off-whites are more inviting. Grey can be cool or warm depending on its undertone. Beige and taupe are warm and forgiving. Neutrals are not boring — they are essential for balance.</p>
+            <h2>Color and Space</h2>
+            <p>Light colors make a room feel larger and more open. Dark colors make a room feel smaller and more intimate. To make a low ceiling feel higher, paint the ceiling in a light color and the walls in a slightly darker tone. To make a large room feel cozier, use deeper colors on the walls. Horizontal stripes can make a room feel wider; vertical stripes can make it feel taller.</p>
+            <h2>Practical Tips</h2>
+            <p>Always test paint colors in your actual space, because lighting changes everything. Paint large swatches on different walls and observe them at different times of day. Consider the fixed elements in the room — flooring, cabinetry, countertops — and choose colors that harmonize. And remember: you can always change the color. It is the least permanent design decision you can make.</p>
+        `,
+        'a7': `
+            <h1>How to Design a Bathroom That Feels Like a Spa</h1>
+            <div class="article-meta-top">
+                <span>By Clara Lindqvist</span>
+                <span>•</span>
+                <span>March 22, 2025</span>
+                <span>•</span>
+                <span>11 min read</span>
+            </div>
+            <p>The bathroom is often the smallest room in the house, but it has an outsized impact on how we feel each day. A well-designed bathroom can transform a mundane routine into a moment of calm. Here is how to create a spa-like atmosphere at home.</p>
+            <h2>Start with Materials</h2>
+            <p>Natural materials are the foundation of a spa bathroom. Think stone, slate, travertine, or large-format porcelain that mimics stone. Wood adds warmth — use teak or cedar for flooring, benches, or accessories. Avoid glossy, synthetic surfaces. Matte finishes are more soothing.</p>
+            <h2>Lighting Is Everything</h2>
+            <p>Spa bathrooms have soft, layered lighting. Avoid harsh overhead lights. Use wall sconces on either side of the mirror for flattering illumination. Add a dimmer. Consider a small lamp or candle for evening baths. Color temperature should be warm (2700K–3000K).</p>
+            <h2>The Shower Experience</h2>
+            <p>If budget allows, invest in a rain shower head. Add a handheld wand for flexibility. Consider a steam shower if you have the space. A built-in bench or niche for products keeps the shower tidy. Frameless glass enclosures make the space feel larger.</p>
+            <h2>Bathtub</h2>
+            <p>A freestanding tub is the ultimate spa statement. If you have room, place it near a window with a view. If not, a deep soaking tub built into a tiled surround works well. Add a tub tray for books, candles, or a glass of wine.</p>
+            <h2>Texture and Accessories</h2>
+            <p>Rolled white towels, a plush bath mat, a wooden stool, a ceramic tray for soap, and a small plant or orchid all contribute to the spa feeling. Keep surfaces uncluttered. Use woven baskets for storage. Scent is also important — a diffuser with eucalyptus or lavender completes the experience.</p>
+        `,
+        'a8': `
+            <h1>The Case for Slow Furniture: Quality Over Quantity</h1>
+            <div class="article-meta-top">
+                <span>By Elena Marchetti</span>
+                <span>•</span>
+                <span>March 18, 2025</span>
+                <span>•</span>
+                <span>9 min read</span>
+            </div>
+            <p>We live in an age of disposable furniture. Flat-pack pieces are designed to be affordable and temporary, but they often end up in landfills within a few years. A growing movement, however, is pushing back. The "slow furniture" movement advocates for fewer, better-made pieces that last a lifetime — or several.</p>
+            <h2>What Is Slow Furniture?</h2>
+            <p>Slow furniture is the opposite of fast furniture. It prioritizes quality materials, traditional craftsmanship, timeless design, and durability. It is furniture that can be repaired, refinished, and passed down. It is an investment, not a purchase.</p>
+            <h2>Why It Matters</h2>
+            <p>The environmental impact of fast furniture is enormous. According to the EPA, Americans throw away over 12 million tons of furniture each year. Much of it is made from particleboard, which cannot be easily recycled. Slow furniture, by contrast, is made from solid wood, metal, and natural fibers that can be maintained for decades.</p>
+            <h2>How to Identify Quality</h2>
+            <p>Look for solid wood joinery — dovetails, mortise and tenon — rather than screws and staples. Check the weight; quality furniture is heavy. Look for hand-applied finishes. Ask about the materials: Is the wood sustainably harvested? Is the upholstery natural? Is the hardware solid brass or plated?</p>
+            <h2>Where to Buy</h2>
+            <p>You can find slow furniture at craft fairs, from independent makers, and at estate sales. Vintage furniture is often better made than anything produced today. If buying new, look for brands that publish their materials and manufacturing processes, and that offer repair services.</p>
+            <h2>The Takeaway</h2>
+            <p>Slow furniture is not about spending more; it is about spending wisely. A well-made chair that lasts fifty years costs less per year than a cheap one that lasts five. And it will bring you more joy every day.</p>
+        `
+    };
+
+    // ============================================================
+    // RENDER FUNCTIONS
+    // ============================================================
+
+    const articleListEl = document.getElementById('articleList');
+    const mainContent = document.getElementById('mainContent');
+    const pages = {
+        home: document.getElementById('page-home'),
+        article: document.getElementById('page-article'),
+        about: document.getElementById('page-about'),
+        contact: document.getElementById('page-contact'),
+        privacy: document.getElementById('page-privacy'),
+        terms: document.getElementById('page-terms'),
+        cookie: document.getElementById('page-cookie')
+    };
+
+    let currentCategory = 'all';
+    let currentSearch = '';
+
+    function renderArticleCards() {
+        const filtered = articles.filter(a => {
+            const catMatch = currentCategory === 'all' || a.category === currentCategory;
+            const searchMatch = currentSearch === '' || 
+                a.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                a.category.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                a.excerpt.toLowerCase().includes(currentSearch.toLowerCase());
+            return catMatch && searchMatch && !a.featured;
+        });
+
+        if (filtered.length === 0) {
+            articleListEl.innerHTML = '<p style="color:var(--muted);grid-column:1/-1;">No articles match your criteria.</p>';
+            return;
+        }
+
+        articleListEl.innerHTML = filtered.map(a => `
+            <article class="article-card" data-id="${a.id}">
+                <img class="card-img" src="${a.image}" alt="${a.imageAlt}" loading="lazy">
+                <div class="card-category">${a.category}</div>
+                <h3><a href="#" data-article="${a.id}">${a.title}</a></h3>
+                <p class="card-excerpt">${a.excerpt}</p>
+                <div class="card-meta">
+                    <span>${a.author}</span>
+                    <span>•</span>
+                    <span>${a.date}</span>
+                    <span>•</span>
+                    <span>${a.readTime}</span>
+                </div>
+            </article>
+        `).join('');
+    }
+
+    function showPage(pageId) {
+        Object.values(pages).forEach(p => p.classList.add('hidden'));
+        if (pages[pageId]) {
+            pages[pageId].classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
+    function showArticle(articleId) {
+        const article = articles.find(a => a.id === articleId);
+        const content = fullArticles[articleId];
+        if (!article || !content) return;
+
+        // Build related articles (same category, excluding current)
+        const related = articles.filter(a => a.category === article.category && a.id !== articleId).slice(0, 3);
+        const relatedHtml = related.length > 0 ? `
+            <div class="related-articles">
+                <h3>Related Articles</h3>
+                <div class="article-list">
+                    ${related.map(r => `
+                        <article class="article-card">
+                            <div class="card-category">${r.category}</div>
+                            <h3><a href="#" data-article="${r.id}">${r.title}</a></h3>
+                            <p class="card-excerpt">${r.excerpt}</p>
+                            <div class="card-meta">
+                                <span>${r.author}</span>
+                                <span>•</span>
+                                <span>${r.readTime}</span>
+                            </div>
+                        </article>
+                    `).join('')}
+                </div>
+            </div>
+        ` : '';
+
+        document.getElementById('fullArticleContent').innerHTML = content + relatedHtml;
+        showPage('article');
+    }
+
+    // ============================================================
+    // EVENT LISTENERS
+    // ============================================================
+
+    // Category filtering
+    document.getElementById('categoryFilter').addEventListener('click', e => {
+        if (e.target.classList.contains('category-pill')) {
+            document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+            e.target.classList.add('active');
+            currentCategory = e.target.dataset.category;
+            renderArticleCards();
+        }
+    });
+
+    // Search
+    document.getElementById('searchToggle').addEventListener('click', () => {
+        const bar = document.getElementById('searchBar');
+        bar.classList.toggle('open');
+        if (bar.classList.contains('open')) {
+            document.getElementById('searchInput').focus();
+        }
+    });
+
+    document.getElementById('searchInput').addEventListener('input', e => {
+        currentSearch = e.target.value;
+        renderArticleCards();
+    });
+
+    // Navigation
+    document.querySelectorAll('[data-page]').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const page = e.target.dataset.page;
+            if (page === 'home') {
+                showPage('home');
+                // Reset filters
+                currentCategory = 'all';
+                currentSearch = '';
+                document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+                document.querySelector('.category-pill[data-category="all"]').classList.add('active');
+                document.getElementById('searchInput').value = '';
+                renderArticleCards();
+            } else {
+                showPage(page);
+            }
+            // Close mobile menu
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+
+    // Article links (delegated)
+    document.addEventListener('click', e => {
+        const link = e.target.closest('[data-article]');
+        if (link) {
+            e.preventDefault();
+            const id = link.dataset.article;
+            if (fullArticles[id]) {
+                showArticle(id);
+            } else {
+                // For popular items without full articles, show a placeholder or use the featured article
+                if (id === 'popular1') showArticle('a1');
+                else if (id === 'popular2') showArticle('a2');
+                else if (id === 'popular3') showArticle('a3');
+                else if (id === 'popular4') showArticle('a4');
+                else showArticle('featured');
+            }
+        }
+    });
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+            const item = q.parentElement;
+            item.classList.toggle('open');
+        });
+    });
+
+    // Mobile menu
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // ============================================================
+    // INIT
+    // ============================================================
+    renderArticleCards();
+</script>
+</body>
+</html>

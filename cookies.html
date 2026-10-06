@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy — Highline House Ideas</title>
+    <meta name="description" content="Cookies Policy for Highline House Ideas: what cookies are, how we use them, and your choices.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base — same as main site */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf9f7;
+            --paper-warm: #f4f1ed;
+            --stone: #e8e4df;
+            --stone-dark: #ccc7c0;
+            --accent: #b5651e;
+            --accent-light: #d4a373;
+            --muted: #6b6560;
+            --white: #ffffff;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.06);
+            --radius: 2px;
+            --max-width: 1280px;
+            --content-width: 720px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.6rem; }
+        h2 { font-size: 1.9rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+        h4 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .site-header {
+            border-bottom: 1px solid var(--stone);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+            background: rgba(250, 249, 247, 0.92);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-main {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            transition: color 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 1.5px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--ink);
+            border-bottom-color: var(--accent);
+        }
+
+        .search-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--muted);
+            padding: 8px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--ink);
+        }
+
+        @media (max-width: 860px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--paper);
+                flex-direction: column;
+                padding: 24px;
+                gap: 18px;
+                border-bottom: 1px solid var(--stone);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: none;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--stone);
+            background: var(--paper-warm);
+        }
+        .search-bar.open {
+            display: block;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid var(--stone-dark);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            background: var(--white);
+            outline: none;
+        }
+        .search-bar input:focus {
+            border-color: var(--accent);
+        }
+
+        /* Cookies Page Specific (mirrors privacy page) */
+        .cookies-page {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 60px 0 80px;
+        }
+
+        .cookies-page h1 {
+            margin-bottom: 12px;
+            font-size: 2.4rem;
+        }
+
+        .cookies-meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--stone);
+        }
+
+        .cookies-page h2 {
+            font-size: 1.55rem;
+            margin-top: 2.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cookies-page h3 {
+            font-size: 1.2rem;
+            margin-top: 1.8rem;
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+
+        .cookies-page p {
+            font-size: 1rem;
+            color: #3d3a37;
+            margin-bottom: 1.2rem;
+        }
+
+        .cookies-page ul,
+        .cookies-page ol {
+            margin: 0 0 1.4rem 1.8rem;
+            color: #3d3a37;
+        }
+
+        .cookies-page li {
+            margin-bottom: 0.5rem;
+        }
+
+        .cookies-page a {
+            color: var(--accent);
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .cookies-page a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .cookies-note {
+            background: var(--paper-warm);
+            padding: 24px 28px;
+            border-radius: var(--radius);
+            border-left: 3px solid var(--accent);
+            margin: 2.5rem 0;
+        }
+
+        .cookies-note p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #4d4843;
+        }
+
+        .cookies-divider {
+            border: 0;
+            border-top: 1px solid var(--stone);
+            margin: 40px 0;
+        }
+
+        .cookies-page .last-updated {
+            font-style: italic;
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--stone);
+        }
+
+        /* cookie table styling */
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.8rem 0;
+            font-size: 0.92rem;
+        }
+
+        .cookie-table th {
+            background: var(--paper-warm);
+            font-family: var(--font-sans);
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 12px 12px 0;
+            border-bottom: 2px solid var(--stone-dark);
+            color: var(--ink);
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .cookie-table td {
+            padding: 14px 12px 14px 0;
+            border-bottom: 1px solid var(--stone);
+            color: #3d3a37;
+            vertical-align: top;
+        }
+
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cookie-table td:first-child {
+            font-weight: 500;
+            color: var(--ink);
+        }
+
+        @media (max-width: 600px) {
+            .cookie-table {
+                font-size: 0.82rem;
+            }
+            .cookie-table th,
+            .cookie-table td {
+                padding: 10px 8px 10px 0;
+            }
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--ink);
+            color: var(--stone);
+            padding: 56px 0 32px;
+            margin-top: 80px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand .logo-main {
+            color: var(--paper);
+            font-size: 1.4rem;
+        }
+
+        .footer-brand .logo-sub {
+            color: var(--stone-dark);
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: var(--stone-dark);
+            margin-top: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            margin-bottom: 16px;
+            color: var(--paper);
+        }
+
+        .footer-col ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            font-size: 0.84rem;
+            color: var(--stone-dark);
+            transition: color 0.2s;
+            border-bottom: none;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: var(--stone-dark);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER — identical structure -->
+<header class="site-header" role="banner">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Highline House Ideas home">
+                <span class="logo-main">Highline House Ideas</span>
+                <span class="logo-sub">Interior Design & Architecture Journal</span>
+            </a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html" class="active">Cookies Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </nav>
+            <div style="display:flex;gap:8px;align-items:center;">
+                <button class="search-toggle" id="searchToggle" aria-label="Search articles">🔍</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search-bar" id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+        </div>
+    </div>
+</header>
+
+<!-- MAIN COOKIES CONTENT -->
+<main role="main">
+    <div class="container">
+        <div class="cookies-page">
+            <h1>Cookies Policy</h1>
+            <div class="cookies-meta">Last updated: January 15, 2025</div>
+
+            <p>This Cookies Policy explains how Highline House Ideas ("we", "our", or "us") uses cookies and similar tracking technologies on the website highlinehouseideas.com (the "Site"). It explains what these technologies are, why we use them, and your rights to control our use of them.</p>
+            <p>By continuing to browse or use our Site, you agree to our use of cookies as described in this policy. If you do not agree, you should adjust your browser settings to block or delete cookies, or refrain from using the Site.</p>
+
+            <h2>1. What Are Cookies?</h2>
+            <p>Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners. Cookies help us remember your preferences, understand how you interact with our content, and improve your overall experience.</p>
+            <p>Cookies set by the website owner (in this case, Highline House Ideas) are called "first-party cookies." Cookies set by parties other than the website owner are called "third-party cookies." Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., analytics).</p>
+
+            <h2>2. How We Use Cookies</h2>
+            <p>We use cookies for several reasons, which can be grouped into the following categories:</p>
+            <ul>
+                <li><strong>Essential / Strictly Necessary Cookies:</strong> These cookies are required for the operation of our Site. They enable core functionality such as security, network management, and accessibility. You cannot opt out of these cookies without severely impacting your ability to use the Site.</li>
+                <li><strong>Performance & Analytics Cookies:</strong> These cookies help us understand how visitors interact with our Site by collecting and reporting information anonymously. They allow us to count visits, see which pages are most popular, and understand how users move around the site. This helps us improve the way our website works.</li>
+                <li><strong>Functionality Cookies:</strong> These cookies enable the Site to remember choices you make (such as your language preference or the region you are in) and provide enhanced, more personal features. They may also be used to remember changes you have made to text size, fonts, and other parts of web pages that you can customize.</li>
+                <li><strong>Targeting / Advertising Cookies (if applicable):</strong> We do not currently run third-party advertising networks on the Site. Should we do so in the future, these cookies would be used to deliver advertisements that are relevant to you and your interests. They may also limit the number of times you see an ad and help measure the effectiveness of advertising campaigns.</li>
+            </ul>
+
+            <h2>3. Specific Cookies We Use</h2>
+            <p>Below is a detailed list of the cookies we currently use on the Site. We may update this list from time to time as our site evolves.</p>
+
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Name</th>
+                        <th>Type</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>highline_session</td>
+                        <td>Essential</td>
+                        <td>Preserves user session state across page requests.</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>highline_consent</td>
+                        <td>Essential</td>
+                        <td>Stores your cookie consent preferences.</td>
+                        <td>1 year</td>
+                    </tr>
+                    <tr>
+                        <td>_ga</td>
+                        <td>Analytics</td>
+                        <td>Used to distinguish users for Google Analytics (if enabled).</td>
+                        <td>2 years</td>
+                    </tr>
+                    <tr>
+                        <td>_gid</td>
+                        <td>Analytics</td>
+                        <td>Used to distinguish users for Google Analytics (if enabled).</td>
+                        <td>24 hours</td>
+                    </tr>
+                    <tr>
+                        <td>_gat</td>
+                        <td>Analytics</td>
+                        <td>Used to throttle request rate for Google Analytics (if enabled).</td>
+                        <td>1 minute</td>
+                    </tr>
+                    <tr>
+                        <td>pll_language</td>
+                        <td>Functionality</td>
+                        <td>Remembers the user's selected language preference (if multilingual features are used).</td>
+                        <td>1 year</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><em>Note: This table is illustrative. The exact cookies used may vary depending on third-party services integrated at any given time. We do not use any advertising or targeting cookies at present.</em></p>
+
+            <h2>4. Third-Party Cookies</h2>
+            <p>In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the Site and deliver services. These third parties may include:</p>
+            <ul>
+                <li><strong>Google Analytics:</strong> Helps us understand how visitors engage with the Site. Google may use the data collected to contextualize and personalize the ads of its own advertising network. You can opt out of Google Analytics without affecting how you visit our site – for more information, visit <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out</a>.</li>
+                <li><strong>Other analytics providers:</strong> We may use privacy-focused analytics that do not track personal data or use cookies.</li>
+            </ul>
+            <p>We do not control third-party cookies. Please refer to the respective third-party privacy policies for more information.</p>
+
+            <h2>5. Your Cookie Choices and Control</h2>
+            <p>You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:</p>
+            <ul>
+                <li><strong>Browser settings:</strong> Most web browsers allow you to manage your cookie preferences. You can set your browser to refuse cookies, or to alert you when cookies are being sent. The methods for doing so vary from browser to browser, and from version to version. You can obtain up-to-date information about blocking and deleting cookies via these links:
+                    <ul style="margin-top: 0.5rem;">
+                        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+                        <li><a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+                        <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Microsoft Edge</a></li>
+                    </ul>
+                </li>
+                <li><strong>Opt-out tools:</strong> For analytics cookies, you can use the opt-out tools provided by the respective third parties (e.g., Google Analytics opt-out).</li>
+                <li><strong>Consent banner:</strong> If a cookie consent banner is presented on your first visit, you may choose which categories of cookies to accept. You can change your preferences at any time by clearing your browser cookies and revisiting the site.</li>
+            </ul>
+            <p>Please note that if you disable or refuse cookies, some parts of the Site may become inaccessible or not function properly.</p>
+
+            <div class="cookies-note">
+                <p><strong>Your continued use of the Site without changing your browser settings or providing consent where required means that you accept our use of cookies as described in this policy.</strong> If you do not agree, please disable cookies or discontinue use of the Site.</p>
+            </div>
+
+            <h2>6. Do Not Track Signals</h2>
+            <p>Some browsers have a "Do Not Track" (DNT) feature that lets you tell websites that you do not want to have your online activities tracked. We currently do not respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Cookies Policy.</p>
+
+            <h2>7. Changes to This Cookies Policy</h2>
+            <p>We may update this Cookies Policy from time to time to reflect changes in technology, legislation, or our data practices. When we make changes, we will revise the "Last updated" date at the top of this page. We encourage you to review this page periodically to stay informed about our use of cookies.</p>
+
+            <h2>8. Further Information</h2>
+            <p>If you have any questions about our use of cookies or other technologies, please contact us at:</p>
+            <ul>
+                <li>Email: <a href="mailto:privacy@highlinehouseideas.com">privacy@highlinehouseideas.com</a></li>
+                <li>Post: Highline House Ideas, Via della Spiga 14, 20121 Milano, Italy</li>
+            </ul>
+            <p>For more information about how we handle your personal data, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+
+            <hr class="cookies-divider">
+
+            <p class="last-updated">This Cookies Policy was last updated on January 15, 2025.</p>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER — identical structure -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-main">Highline House Ideas</div>
+                <div class="logo-sub">Interior Design & Architecture Journal</div>
+                <p>Independent editorial covering the built environment. In-depth articles, practical guides, and critical perspectives on residential design.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Topics</h5>
+                <ul>
+                    <li><a href="index.html">Interior Design</a></li>
+                    <li><a href="index.html">Architecture</a></li>
+                    <li><a href="index.html">Materials</a></li>
+                    <li><a href="index.html">Lighting</a></li>
+                    <li><a href="index.html">Space Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Information</h5>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Follow</h5>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Highline House Ideas. All rights reserved.</span>
+            <span>Made with care in Milan & London.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Search toggle
+    document.getElementById('searchToggle').addEventListener('click', () => {
+        const bar = document.getElementById('searchBar');
+        bar.classList.toggle('open');
+        if (bar.classList.contains('open')) {
+            document.getElementById('searchInput').focus();
+        }
+    });
+
+    // Optional: search input handler (simulated)
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+        console.log('Search query:', e.target.value);
+    });
+</script>
+</body>
+</html>

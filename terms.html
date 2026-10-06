@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use — Highline House Ideas</title>
+    <meta name="description" content="Terms of Use for Highline House Ideas — independent editorial on interior design, architecture, and the built environment.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base (matches your site) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf9f7;
+            --paper-warm: #f4f1ed;
+            --stone: #e8e4df;
+            --stone-dark: #ccc7c0;
+            --accent: #b5651e;
+            --accent-light: #d4a373;
+            --muted: #6b6560;
+            --white: #ffffff;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.06);
+            --radius: 2px;
+            --max-width: 1280px;
+            --content-width: 720px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.6rem; }
+        h2 { font-size: 1.9rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+        h4 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .site-header {
+            border-bottom: 1px solid var(--stone);
+            background: rgba(250, 249, 247, 0.92);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-main {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            transition: color 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 1.5px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--ink);
+            border-bottom-color: var(--accent);
+        }
+
+        .search-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--muted);
+            padding: 8px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--ink);
+        }
+
+        @media (max-width: 860px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--paper);
+                flex-direction: column;
+                padding: 24px;
+                gap: 18px;
+                border-bottom: 1px solid var(--stone);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: none;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--stone);
+            background: var(--paper-warm);
+        }
+        .search-bar.open {
+            display: block;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid var(--stone-dark);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            background: var(--white);
+            outline: none;
+        }
+        .search-bar input:focus {
+            border-color: var(--accent);
+        }
+
+        /* Page Section (Terms) */
+        .page-section {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .page-section h1 {
+            margin-bottom: 24px;
+            font-size: 2.6rem;
+        }
+
+        .page-section h2 {
+            margin-top: 40px;
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+
+        .page-section h2:first-of-type {
+            margin-top: 8px;
+        }
+
+        .page-section p {
+            font-size: 1.02rem;
+            line-height: 1.8;
+            color: #2d2a27;
+        }
+
+        .page-section ul {
+            margin: 0 0 20px 24px;
+            font-size: 1.02rem;
+            line-height: 1.8;
+            color: #2d2a27;
+        }
+
+        .page-section li {
+            margin-bottom: 8px;
+        }
+
+        .page-section a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+        }
+
+        .page-section a:hover {
+            color: var(--ink);
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--stone);
+            margin: 36px 0;
+        }
+
+        .editor-card {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            background: var(--paper-warm);
+            border: 1px solid var(--stone);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            margin: 32px 0 16px;
+        }
+
+        .editor-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: var(--stone);
+            flex-shrink: 0;
+        }
+
+        .editor-info h4 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+
+        .editor-info p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 500px) {
+            .editor-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+            .editor-info p {
+                text-align: center;
+            }
+        }
+
+        /* Terms specific */
+        .terms-meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 28px;
+            font-style: italic;
+            border-left: 3px solid var(--accent-light);
+            padding-left: 18px;
+        }
+
+        .terms-meta strong {
+            font-weight: 600;
+            color: var(--ink);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--ink);
+            color: var(--stone);
+            padding: 56px 0 32px;
+            margin-top: 80px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand .logo-main {
+            color: var(--paper);
+            font-size: 1.4rem;
+        }
+
+        .footer-brand .logo-sub {
+            color: var(--stone-dark);
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: var(--stone-dark);
+            margin-top: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            margin-bottom: 16px;
+            color: var(--paper);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            font-size: 0.84rem;
+            color: var(--stone-dark);
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: var(--stone-dark);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Highline House Ideas home">
+                <span class="logo-main">Highline House Ideas</span>
+                <span class="logo-sub">Interior Design & Architecture Journal</span>
+            </a>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html" class="active">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookies Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </nav>
+            <div style="display:flex;gap:8px;align-items:center;">
+                <button class="search-toggle" id="searchToggle" aria-label="Search articles">🔍</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search-bar" id="searchBar">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+        </div>
+    </div>
+</header>
+
+<!-- MAIN CONTENT — TERMS PAGE -->
+<main role="main" id="mainContent">
+    <div id="page-terms" class="page">
+        <div class="container">
+            <div class="page-section">
+                <h1>Terms of Use</h1>
+                
+                <div class="terms-meta">
+                    <strong>Last updated:</strong> 15 March 2025 · <strong>Effective:</strong> 1 April 2025
+                </div>
+
+                <p>Welcome to <strong>Highline House Ideas</strong>. These Terms of Use ("Terms") govern your access to and use of the Highline House Ideas website, including any content, functionality, and services offered on or through <a href="index.html">highlinehouseideas.com</a> (the "Site").</p>
+
+                <p>By accessing or using the Site, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use the Site. We reserve the right to update or modify these Terms at any time without prior notice. Your continued use of the Site following any changes constitutes acceptance of those changes.</p>
+
+                <div class="divider"></div>
+
+                <h2>1. Use of the Site</h2>
+                <p>Highline House Ideas provides editorial content related to interior design, architecture, materials, lighting, space planning, and sustainable building. The Site is intended for personal, non-commercial use.</p>
+                <p>You agree to use the Site only for lawful purposes and in a manner that does not infringe the rights of, or restrict or inhibit the use and enjoyment of, the Site by any third party. Prohibited behavior includes:</p>
+                <ul>
+                    <li>Harassing or causing distress or inconvenience to any person;</li>
+                    <li>Transmitting obscene or offensive content;</li>
+                    <li>Disrupting the normal flow of dialogue within the Site;</li>
+                    <li>Attempting to gain unauthorized access to our systems or networks;</li>
+                    <li>Using automated systems (bots, scrapers) to access the Site without our prior written consent.</li>
+                </ul>
+
+                <h2>2. Intellectual Property</h2>
+                <p>Unless otherwise stated, all content on the Site — including text, articles, photographs, illustrations, graphics, logos, and the selection and arrangement thereof — is the property of Highline House Ideas or its content suppliers and is protected by international copyright, trademark, and other intellectual property laws.</p>
+                <p>You may view, download, and print pages from the Site for your own personal, non-commercial use, provided you do not modify the content and you retain all copyright and proprietary notices. You may not republish, reproduce, distribute, sell, or exploit any content from the Site for commercial purposes without our express written permission.</p>
+
+                <h2>3. User Contributions & Comments</h2>
+                <p>We may offer areas for user interaction, including comments, contact forms, or submission of pitches. By submitting any material to the Site, you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, reproduce, modify, adapt, publish, and display such material in any media.</p>
+                <p>You represent and warrant that you own or control all rights to the content you submit, and that it does not violate any third-party rights or applicable law. We reserve the right to remove any user contribution at our sole discretion.</p>
+
+                <h2>4. Editorial Independence & Accuracy</h2>
+                <p>Highline House Ideas is an independent editorial publication. We do not accept sponsored content. Our articles are researched, written, and edited by our team. While we strive for accuracy and relevance, the content on the Site is provided for general informational purposes only and should not be considered professional advice.</p>
+                <p>We may use affiliate links. When you purchase through such links, we may earn a commission at no extra cost to you. This does not influence our recommendations or editorial judgment. For more details, see our <a href="disclaimer.html">Disclaimer</a>.</p>
+
+                <h2>5. Third-Party Links</h2>
+                <p>The Site may contain links to third-party websites or resources. These links are provided for your convenience only. We have no control over the content of those sites and accept no responsibility for them or for any loss or damage that may arise from your use of them. Your use of third-party websites is subject to the terms and conditions of those websites.</p>
+
+                <h2>6. Disclaimer of Warranties</h2>
+                <p>The Site and its content are provided "as is" and "as available" without any warranties of any kind, either express or implied. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                <p>We do not warrant that the Site will be uninterrupted, error-free, secure, or free of viruses or other harmful components. You use the Site at your own risk.</p>
+
+                <h2>7. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by applicable law, Highline House Ideas, its editors, contributors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Site or its content. This includes, without limitation, loss of profits, data, or goodwill.</p>
+                <p>In no event shall our total liability to you for all claims arising from or relating to the Site exceed the amount of €100 (or the equivalent in your local currency).</p>
+
+                <h2>8. Indemnification</h2>
+                <p>You agree to indemnify, defend, and hold harmless Highline House Ideas, its editors, contributors, and affiliates from and against any claims, liabilities, damages, losses, and expenses, including reasonable legal fees, arising out of or in any way connected with your access to or use of the Site or your violation of these Terms.</p>
+
+                <h2>9. Privacy & Cookies</h2>
+                <p>Your use of the Site is also governed by our <a href="privacy.html">Privacy Policy</a> and <a href="cookies.html">Cookies Policy</a>, which explain how we collect, use, and protect your personal information. By using the Site, you consent to our collection and use of information as described in those policies.</p>
+
+                <h2>10. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of Italy, without regard to its conflict of law provisions. Any dispute arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Milan, Italy.</p>
+
+                <h2>11. Termination</h2>
+                <p>We reserve the right to terminate or suspend your access to all or part of the Site, without notice, for any conduct that we believe violates these Terms or is harmful to our interests or the interests of another user.</p>
+
+                <h2>12. Contact</h2>
+                <p>If you have any questions about these Terms of Use, please contact us at <a href="mailto:legal@highlinehouseideas.com">legal@highlinehouseideas.com</a> or write to:</p>
+                <p style="margin-left: 24px;">
+                    Highline House Ideas<br>
+                    Via della Spiga 14<br>
+                    20121 Milano, Italy
+                </p>
+
+                <div class="divider"></div>
+
+                <p style="font-size: 0.9rem; color: var(--muted);">By using this website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-main">Highline House Ideas</div>
+                <div class="logo-sub">Interior Design & Architecture Journal</div>
+                <p>Independent editorial covering the built environment. In-depth articles, practical guides, and critical perspectives on residential design.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Topics</h5>
+                <ul>
+                    <li><a href="index.html">Interior Design</a></li>
+                    <li><a href="index.html">Architecture</a></li>
+                    <li><a href="index.html">Materials</a></li>
+                    <li><a href="index.html">Lighting</a></li>
+                    <li><a href="index.html">Space Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Information</h5>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Follow</h5>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Highline House Ideas. All rights reserved.</span>
+            <span>Made with care in Milan & London.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Search toggle
+    document.getElementById('searchToggle').addEventListener('click', function() {
+        const bar = document.getElementById('searchBar');
+        bar.classList.toggle('open');
+        if (bar.classList.contains('open')) {
+            document.getElementById('searchInput').focus();
+        }
+    });
+
+    // Close mobile menu on link click (for small screens)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+
+    // Simple search placeholder (non-functional, just UX)
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+        // In a full implementation, this would trigger a search.
+        // Kept minimal for the Terms page context.
+    });
+</script>
+</body>
+</html>
